@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         <meta charset = "UTF-8">
+         <title> Psychic - Game </title>
+    </head>
+    <body>
+
+        <h1> The Psychic Game </h1>
+
+         <p> Guess what letter I'm thinking of </p>
+
+
+    <script type="text/javascript"> 
+
+            function computerGuess() {
+               var chars = "abcdefghijklmnopqrstuvwxy";
+               return chars.substr( Math.floor(Math.random() * 62), 1);
+            }
+            var rchar = computerGuess();
+
+           
+           var userGuess = prompt ("guess a letter");
+            var userGuesslower = userGuess.toLowerCase();
+
+            if (userGuesslower === rchar) {
+                document.write("You win")
+            }
+            else {
+                document.write ("you lose")
+            }
+
+            /*
+            var wins = 
+            var losses =
+            var guessesLeft =
+            var yourGuesses =
+            */
+
+
+
+
+    </script>
+
+    </body>
+
+</html>
